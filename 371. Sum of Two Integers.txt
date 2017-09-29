@@ -1,0 +1,18 @@
+// Author: William Xu
+
+class Solution {
+    public int getSum(int a, int b) {
+        if(a == 0) return b;
+        if(b == 0) return a;
+        
+        int sum, carry;
+        
+        // add two together
+        sum = a^b;
+        // do the carry
+        carry = (a&b)<<1;
+        
+        // add sum and carry together
+        return getSum(sum, carry);
+    }
+}
