@@ -1,0 +1,27 @@
+// loop from middle and extend to both side 
+
+class Solution {
+    public int lo, max;
+    
+    public String longestPalindrome(String s) {
+        if(s.length() <= 1) return s;
+
+        for(int i = 0; i < s.length() - 1; i++){
+            checkPalindrome(s, i, i);
+            checkPalindrome(s, i, i+1);
+        }
+        
+        return s.substring(lo, lo + max);
+    }
+    
+    public void checkPalindrome(String s, int left, int right){
+        while(left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)){
+            left--;
+            right++;
+        }
+        if(right - left - 1 > max){
+            lo = left + 1;
+            max = right - left - 1;
+        }
+    }
+}
