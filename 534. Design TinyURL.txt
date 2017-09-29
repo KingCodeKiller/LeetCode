@@ -1,0 +1,46 @@
+// You can type code here and execute it.
+
+class Main {
+    public static void main(String[] args) {
+        HashMap <String, String> map = new HashMap<String, String>();
+        
+        String URL = "https://leetcode.com/problems/design-tinyurl";
+        String shortURL = genURL(URL, map);
+        System.out.println(shortURL);
+        String oriURL = getURL(shortURL, map);
+        System.out.println(oriURL);
+    }
+    
+    // Generate the identifier
+    public static String genKey(){
+        StringBuilder key = new StringBuilder("");
+        key.append((int) (Math.random() * 9));
+        key.append((char) ('a' + Math.random() * 26));
+        key.append((int) (Math.random() * 9));
+        key.append((char) ('a' + Math.random() * 26));
+        key.append((int) (Math.random() * 9));
+        key.append((char) ('a' + Math.random() * 26));           
+        return key.toString();
+    }
+    
+    // Generate tinny URL
+    public static String genURL(String s, HashMap map){
+        String key = genKey();
+        while(map.containsKey(key)){
+            key = genKey();
+        }
+        map.put(key, s);
+        String ret = "http://tinyurl.com/" + key;
+        return ret;
+    }
+    
+    
+    // Generate back the original URL
+    public static String getURL(String s, HashMap map){
+        String key = s.replace("http://tinyurl.com/" , "");
+        if(!map.containsKey(key)){
+            return "No Such URL";
+        }
+        return map.get(key).toString();
+    }
+}
