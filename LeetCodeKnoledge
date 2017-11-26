@@ -1,0 +1,5 @@
+LIFO Stack myStack = new Stack();
+
+FIFO Queue<String> myQueue = new LinkedList<String>();
+
+linkedlist.get() can't use for compare, should use .equal();
