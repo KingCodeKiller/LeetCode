@@ -3,3 +3,8 @@ LIFO Stack myStack = new Stack();
 FIFO Queue<String> myQueue = new LinkedList<String>();
 
 linkedlist.get() can't use for compare, should use .equal();
+
+difference .equals vs ==
+.equals: is for object value
+==     : is for type compares object identity
+and == can't use for String compare and .equals can't use for char compare
