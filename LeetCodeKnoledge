@@ -17,5 +17,9 @@ ArrayList vs LinkedList:
 Find middle point in linkedlist:
 use fast and slow pointer. fast move double and slow move one by one.
 
+If ask you for find shortest path, try BFS:
+LeetCode 127: https://www.youtube.com/watch?v=mgICIVXu2sQ
+use Queue Set size
+
 
      
