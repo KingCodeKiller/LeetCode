@@ -14,3 +14,8 @@ ArrayList vs LinkedList:
      2.对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针。 
      3.对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。 
      
+Find middle point in linkedlist:
+use fast and slow pointer. fast move double and slow move one by one.
+
+
+     
