@@ -21,5 +21,9 @@ If ask you for find shortest path, try BFS:
 LeetCode 127: https://www.youtube.com/watch?v=mgICIVXu2sQ
 use Queue Set size
 
+String Manipulation:
+StringBuilder sb = new StringBuilder(A);
+1:sb.indexOf(String x) -> check if x is a substring of string sb.
+
 
      
