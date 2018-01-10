@@ -18,12 +18,24 @@ Find middle point in linkedlist:
 use fast and slow pointer. fast move double and slow move one by one.
 
 If ask you for find shortest path, try BFS:
-LeetCode 127: https://www.youtube.com/watch?v=mgICIVXu2sQ
+LeetCode 127: (https://www.youtube.com/watch?v=mgICIVXu2sQ)
 use Queue Set size
 
 String Manipulation:
 StringBuilder sb = new StringBuilder(A);
 1:sb.indexOf(String x) -> check if x is a substring of string sb.
 
+Dynamic Programming:
+1:Recursion
+2:Memorization
+3:Back-Up approach
+(https://www.youtube.com/watch?v=P8Xa2BitN3I)
+
+BFS vs. DFS (https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/)
+*Breadth First Traversal (Or Level Order Traversal)
+*Depth First Traversals
+     Inorder Traversal (Left-Root-Right)
+     Preorder Traversal (Root-Left-Right)
+     Postorder Traversal (Left-Right-Root)
 
      
